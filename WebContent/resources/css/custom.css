@@ -190,7 +190,8 @@ body {
 .section > .photo-container > .right {
   flex: 2;
   display: block;
-
+	
+  padding: 0 1.5rem;
   font-size: 1.3rem;
   line-height: 2rem;
   text-align: left;
