@@ -1,0 +1,51 @@
+.section {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.section > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section > p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.section > ul {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section > ul > li {
+  margin-left: 1rem;
+  list-style: none;
+}
+.section > ul > li > a {
+  width: 150px;
+  height: 150px;
+
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 150px;
+  text-decoration: none;
+
+  color: #ffffff;
+  background: skyblue;
+  border-radius: 5px;
+  box-shadow: 2px 1px 8px darkgray;
+}
+.section > ul > li a:hover {
+  background: white;
+  color: skyblue;
+  font-weight: 700;
+}
+.section > img {
+  margin-top: 1rem;
+  width: 80%;
+}
