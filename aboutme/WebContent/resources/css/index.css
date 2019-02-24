@@ -1,51 +1,40 @@
-.section {
+main > article {
+  width: 100%;
+}
+main > article section {
+  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
 }
-.section > h1 {
+main > article > .article__text > h1 {
   font-size: 2rem;
-  font-weight: 700;
+  line-height: 3rem;
 }
-.section > p {
+main > article > .article__text > p {
   font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
-.section > ul {
-  width: 100%;
+main > article > .article__link a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section > ul > li {
-  margin-left: 1rem;
-  list-style: none;
-}
-.section > ul > li > a {
-  width: 150px;
-  height: 150px;
-
-  display: block;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 150px;
   text-decoration: none;
-
-  color: #ffffff;
   background: skyblue;
+  color: white;
+  box-shadow: 2px 2px 6px darkgrey;
   border-radius: 5px;
-  box-shadow: 2px 1px 8px darkgray;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  line-height: 100px;
+  font-weight: 600;
 }
-.section > ul > li a:hover {
-  background: white;
-  color: skyblue;
-  font-weight: 700;
+main > article figure {
+  margin: 0;
 }
-.section > img {
-  margin-top: 1rem;
+main > article figure img {
   width: 80%;
 }
