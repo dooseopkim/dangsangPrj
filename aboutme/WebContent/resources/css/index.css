@@ -1,11 +1,3 @@
-main > article {
-  width: 100%;
-}
-main > article section {
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
 main > article > .article__text > h1 {
   font-size: 2rem;
   line-height: 3rem;
@@ -32,9 +24,7 @@ main > article > .article__link a {
   line-height: 100px;
   font-weight: 600;
 }
-main > article figure {
-  margin: 0;
-}
-main > article figure img {
+
+main > article > .article__figure > img {
   width: 80%;
 }

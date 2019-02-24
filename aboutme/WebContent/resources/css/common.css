@@ -2,7 +2,9 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+img,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -51,11 +53,19 @@ header nav a {
   font-size: 1.5rem;
   font-weight: 600;
 }
+main > article {
+  width: 100%;
+}
+main > article section {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 footer p {
   font-size: 1rem;
   line-height: 2rem;
 }
-a.btn:hover {
+.btn:hover {
   background: lightblue;
   color: darkslategray;
   font-weight: 700;

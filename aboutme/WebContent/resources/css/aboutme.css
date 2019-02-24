@@ -1,19 +1,18 @@
-.section > .article {
-  width: 100%;
-
-  margin: 0;
+main > article > section {
   padding: 1rem 4rem;
-  box-sizing: border-box;
-
   border-bottom: 1px solid darkgray;
-
   text-align: left;
 }
-.section > .article > h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
+main > article > section:last-child {
+  border-bottom: 0;
 }
-.section > .article > p {
-  font-size: 1rem;
-  line-height: 1.3rem;
+main > article > section > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+main > article > section > p {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5em;
 }
