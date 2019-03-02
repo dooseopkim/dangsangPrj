@@ -1,4 +1,4 @@
-main > article > .photo__section {
+main > article > .article__photo {
   position: relative;
   width: 90%;
   margin: 0 5%;
@@ -6,32 +6,32 @@ main > article > .photo__section {
   overflow: auto;
   border-bottom: 1px solid darkgray;
 }
-main > article > .photo__section:last-child {
+main > article > .article__photo:last-child {
   border-bottom: 0;
 }
-main > article > .photo__section > figure {
+main > article > .article__photo > figure {
   width: 30%;
   float: left;
 }
-main > article > .photo__section > figure > img {
+main > article > .article__photo > figure > img {
   width: 100%;
 
   border: 10px solid darkgray;
   box-sizing: border-box;
 }
-main > article > .photo__section > div {
+main > article > .article__photo > div {
   width: 65%;
   padding-right: 2rem;
   box-sizing: border-box;
   float: right;
   text-align: left;
 }
-main > article > .photo__section > div > h2 {
+main > article > .article__photo > div > h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
 }
-main > article > .photo__section > div > p {
+main > article > .article__photo > div > p {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 2.3rem;
