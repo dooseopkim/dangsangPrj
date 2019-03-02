@@ -12,7 +12,7 @@ main > article > section > h2 {
   line-height: 3.5rem;
 }
 main > article > section > p {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }

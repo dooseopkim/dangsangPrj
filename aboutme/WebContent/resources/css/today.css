@@ -1,16 +1,31 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100vh;
   background: #56da5d;
+}
+#go-first{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 2rem;
+	color: #000;
+	text-decoration: none;
+}
+#go-first:hover{
+	color: #262626;
+	font-weight: 600;
+	text-decoration: underline;
 }
 #today {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: transform(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
   width: 80%;
   text-align: center;
   color: black;
-  font-size: 2rem;
+  font-size: 5rem;
 }
