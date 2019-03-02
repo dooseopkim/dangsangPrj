@@ -1,6 +1,10 @@
 main > article > .photo__section {
-  border-bottom: 1px solid darkgray;
+  position: relative;
+  width: 90%;
+  margin: 0 5%;
+  padding: 1rem 0;
   overflow: auto;
+  border-bottom: 1px solid darkgray;
 }
 main > article > .photo__section:last-child {
   border-bottom: 0;
@@ -17,7 +21,7 @@ main > article > .photo__section > figure > img {
 }
 main > article > .photo__section > div {
   width: 65%;
-  padding-right: 2em;
+  padding-right: 2rem;
   box-sizing: border-box;
   float: right;
   text-align: left;
@@ -25,10 +29,10 @@ main > article > .photo__section > div {
 main > article > .photo__section > div > h2 {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 3em;
+  line-height: 3rem;
 }
 main > article > .photo__section > div > p {
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 2.3em;
+  line-height: 2.3rem;
 }
