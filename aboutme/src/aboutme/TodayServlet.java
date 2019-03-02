@@ -17,24 +17,28 @@ public class TodayServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
-		String currentTime = getTime();
-		StringBuilder sb = new StringBuilder();
 		PrintWriter out = response.getWriter();
-		sb.append("<html>")
-		.append("<head>")
-		.append("<title>About Me</title>")
-		.append("<link rel=\"stylesheet\" href=\"./resources/css/custom.css\" />")
-		.append("</head>")
-		.append("<body>")
-		.append("<a id=\"go-first\"href=\"/aboutme/index.html\">메인으로..</a>")
-		.append("<div id=\"today\">현재시간  : " + currentTime + "</div>")
-		.append("</body>")
-		.append("</html>");
-		out.println(sb.toString());
+		String currentTime = getTime();
+		String html = buildHTML(currentTime);
+		out.println(html);
 	}
 	public String getTime() {
 		LocalDateTime localDateTime =  LocalDateTime.now();
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
 		return localDateTime.format(format);
+	}
+	public String buildHTML(String time) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("<html>")
+		.append("<head>")
+		.append("<title>About Me</title>")
+		.append("<link rel=\"stylesheet\" href=\"./resources/css/today.css\" />")
+		.append("</head>")
+		.append("<body>")
+		.append("<a id=\"go-first\"href=\"/aboutme/index.html\">메인으로..</a>")
+		.append("<div id=\"today\">현재시간  : " + time + "</div>")
+		.append("</body>")
+		.append("</html>");
+		return sb.toString();
 	}
 }

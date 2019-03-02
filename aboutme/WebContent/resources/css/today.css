@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #56da5d;
+}
+#today {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: transform(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
